@@ -1,0 +1,29 @@
+{
+  "name": "Stefanini",
+  "version": "1.0.0",
+  "description": "Evaluacion Stefanini",
+  "main": "index.js",
+  "scripts": {
+    "cypress:runner": "cypress open --browser chrome",
+    "cypress:execution": "cypress run --browser chrome"
+  },
+  "keywords": [
+    "cypress",
+    "stefanini"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicoQualis/Digiventure.git"
+  },
+  "author": {
+    "name": "Nicolas Rioseco",
+    "email": "rioseconicolas@gmail.com",
+    "url": "https://www.linkedin.com/in/nicolas-rioseco/"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "latest",
+    "multiple-cucumber-html-reporter": "latest"
+  }
+}

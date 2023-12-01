@@ -1,0 +1,14 @@
+{
+    "json": {
+      "enabled": true,
+      "output": "results/cucumber-preprocessor/report.json"
+    },
+    "html": {
+        "enabled": true,
+        "output": "results/cucumber-preprocessor/report.html"
+      },
+      "messages": {
+        "enabled": true,
+        "output": "results/cucumber-preprocessor/report-message.ndjson"
+      }
+  }

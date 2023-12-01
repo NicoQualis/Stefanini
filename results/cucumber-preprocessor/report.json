@@ -1,0 +1,864 @@
+[
+  {
+    "description": "    Feature con escenario para validar el alta y baja de usuarios, \n    se validan los mensajes de alerta correspondientes en caso de \n    que falte completar alguno de los campos obligatorios o se que\n    estos se completen con valores inválidos.  ",
+    "elements": [
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-no-completar-ningun-campo",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validar los mensajes indicativos al no completar ningun campo",
+        "before": [
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 1644000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "O campo Nome é obrigatório."
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "O campo E-mail é obrigatório."
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "O campo Senha é obrigatório."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-no-completar-el-campo-nombre",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Validar los mensajes indicativos al no completar el campo Nombre",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 19,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 20,
+            "name": "Completo el formulario con los valores indicados",
+            "result": {
+              "duration": 798000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "campo",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "rioseconicolas@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "12345678"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 24,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "O campo Nome é obrigatório."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-no-completar-el-campo-e-mail",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Validar los mensajes indicativos al no completar el campo E-mail",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 30,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 31,
+            "name": "Completo el formulario con los valores indicados",
+            "result": {
+              "duration": 681000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "campo",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "Nicolas Rioseco"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "12345678"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 35,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "O campo E-mail é obrigatório."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-completar-el-campo-e-mail-con-un-valor-invalido",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Validar los mensajes indicativos al completar el campo E-mail con un valor invalido",
+        "before": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 41,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 268000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 42,
+            "name": "Completo el formulario con los valores indicados",
+            "result": {
+              "duration": 1205000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "campo",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "Nicolas Rioseco"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "rioseconicolas.gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "12345678"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 47,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 48,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "Por favor, insira um e-mail válido."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-no-completar-el-campo-contraseña",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Validar los mensajes indicativos al no completar el campo Contraseña",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 53,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 54,
+            "name": "Completo el formulario con los valores indicados",
+            "result": {
+              "duration": 928000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "campo",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "Nicolas Rioseco"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "rioseconicolas@gmail.com"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 58,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 59,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "O campo Senha é obrigatório."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-los-mensajes-indicativos-al-completar-el-campo-contraseña-con-un-valor-invalido",
+        "keyword": "Scenario",
+        "line": 63,
+        "name": "Validar los mensajes indicativos al completar el campo Contraseña con un valor invalido",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 64,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 217000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 65,
+            "name": "Completo el formulario con los valores indicados",
+            "result": {
+              "duration": 1222000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "campo",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "nombre",
+                  "Nicolas Rioseco"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "rioseconicolas@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "1234567"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 70,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 71,
+            "name": "Para el campo indicado visualizo la alerta esperada",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombreCampo",
+                  "mensaje"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "A senha deve conter ao menos 8 caracteres."
+                ]
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-que-se-crea-el-nuevo-usuario-al-completar-correctamente-todos-los-campos;;2",
+        "keyword": "Scenario Outline",
+        "line": 83,
+        "name": "Validar que se crea el nuevo usuario al completar correctamente todos los campos",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 76,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 77,
+            "name": "Completo todos los campos con valores validos: \"Nicolas Rioseco\", \"rioseconicolas@gmail.com\" y \"12345678\"",
+            "result": {
+              "duration": 1215000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 78,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 79,
+            "name": "Genero correctamente el nuevo usuario",
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-que-se-crea-el-nuevo-usuario-al-completar-correctamente-todos-los-campos;;3",
+        "keyword": "Scenario Outline",
+        "line": 84,
+        "name": "Validar que se crea el nuevo usuario al completar correctamente todos los campos",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 76,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 77,
+            "name": "Completo todos los campos con valores validos: \"Nicolas Rioseco\", \"rioseconicolas@gmail.com\" y \"12345678\"",
+            "result": {
+              "duration": 1174000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 78,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 79,
+            "name": "Genero correctamente el nuevo usuario",
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "alta-de-usuarios;validar-que-se-crea-el-nuevo-usuario-al-completar-correctamente-todos-los-campos",
+        "keyword": "Scenario",
+        "line": 86,
+        "name": "Validar que se crea el nuevo usuario al completar correctamente todos los campos",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 87,
+            "name": "Ingreso a la página de creacion de usuario",
+            "result": {
+              "duration": 241000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 88,
+            "name": "Genero correctamente dos nuevo usuario",
+            "result": {
+              "duration": 2576000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Nicolas Rioseco",
+                  "rioseconicolas@gmail.com",
+                  "12345678"
+                ]
+              },
+              {
+                "cells": [
+                  "Nicolas Rioseco",
+                  "rioseconicolas@gmail.com",
+                  "12345678"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 92,
+            "name": "Presiono el botón Cadastar",
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 93,
+            "name": "Elimino el primer registro",
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 94,
+            "name": "Valido que se elimina correctamente",
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "alta-de-usuarios",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Alta de Usuarios",
+    "uri": "cypress\\e2e\\features\\altaUsuario.feature"
+  }
+]
